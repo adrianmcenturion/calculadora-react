@@ -1,38 +1,81 @@
 .calculadora {
-    width: 500px;
-    height: 600px;
+    width: 31.25em;
+    height: 40.625em;
     background-color: blueviolet;
+    border-radius: 5px;
+    overflow: hidden;
+    
 
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    display: grid; 
+  grid-template-columns: 1fr 1.2fr 0.8fr; 
+  grid-template-rows: 0.5fr 0.5fr 2fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "input input input"
+    "AC AC operadores"
+    "numeros numeros operadores"; 
 }
 
 .contenedor-input {
-    grid-column: 1 / 5;
     background-color: honeydew;
+
+    display: grid; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "."; 
+  grid-area: input; 
     
 }
 
 .contenedor-input input {
-    width: 98%;
-    height: 98%;
-    padding: 0;
-    margin: 0;
+    
 }
 
 .contenedor-boton-borrar {
-    grid-column: 1 / 4;
-    grid-row: 2 / 2;
+    display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "."; 
+  grid-area: AC;
 }
 
 .contenedor-numeros {
-    grid-column: 1 / 4;
-    grid-row: 3 / span 4;
+    display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . ."
+    ". . ."
+    ". . ."
+    "cero cero ."; 
+  grid-area: numeros; 
+    
 }
 
+.boton-cero {
+    grid-area: cero;
+    width: 100%;
+}
+
+
+
+
 .contenedor-operadores {
-    grid-column: 4 / 5;
-    grid-row: 2 / span 5;
+    display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "."
+    "."
+    "."
+    "."
+    "."; 
+  grid-area: operadores; 
 }

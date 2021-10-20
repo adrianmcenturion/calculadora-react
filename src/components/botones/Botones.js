@@ -3,10 +3,10 @@ import React from 'react'
 
 const Botones = ({text}) => {
     return (
-        <div className="contenedor-numero">
-            <button className="boton-numero">{text}</button>
+        
+        <button className="boton-numero">{text}</button>
             
-        </div>
+        
     )
 }
 

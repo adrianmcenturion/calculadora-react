@@ -1,5 +1,9 @@
 .boton-numero {
     width: 100%;
     height: 100%;
-    background-color: green;
+    background-color: transparent;
+    font-size: 25px;
+    font-weight: 500;
+    border-style: none;
+    border: 1px solid grey;
 }

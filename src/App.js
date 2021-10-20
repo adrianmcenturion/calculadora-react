@@ -23,7 +23,9 @@ function App() {
         <Botones text="1"/>
         <Botones text="2"/>
         <Botones text="3"/>
+        <div className="boton-cero">
         <Botones text="0"/>
+        </div>
         <Botones text="."/>
         </div>
       
