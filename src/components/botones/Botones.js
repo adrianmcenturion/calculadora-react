@@ -1,9 +1,10 @@
 import React from 'react'
 
-const Botones = () => {
+
+const Botones = ({text}) => {
     return (
         <div className="contenedor-numero">
-            <button className="boton-numero">1</button>
+            <button className="boton-numero">{text}</button>
             
         </div>
     )
