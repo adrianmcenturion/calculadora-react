@@ -1,10 +1,15 @@
 import React from 'react'
 
 
-const Botones = ({text}) => {
+const Botones = ({handleClick, text}) => {
+
+    const alertText = (e) => {
+        console.log(e.target.textContent)
+    }
+
     return (
         
-        <button className="boton-numero">{text}</button>
+        <button onClick={alertText} className="boton-numero">{text}</button>
             
         
     )
