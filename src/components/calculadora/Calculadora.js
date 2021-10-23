@@ -5,6 +5,9 @@ import Botones from "../botones/Botones"
 
 
 const Calculadora = () => {
+
+  
+
     
     return (
         <div className="calculadora">
@@ -12,33 +15,34 @@ const Calculadora = () => {
         <input className="input" />
       </div>
       <div className="contenedor-boton-borrar">
-        <Botones text="AC"/>
+        <Botones name="AC"/>
         </div>
         <div className="contenedor-numeros">
-        <Botones text="7"/>
-        <Botones text="8"/>
-        <Botones text="9"/>
-        <Botones text="4"/>
-        <Botones text="5"/>
-        <Botones text="6"/>
-        <Botones text="1"/>
-        <Botones text="2"/>
-        <Botones text="3"/>
+        <Botones name={7}/>
+        <Botones name={8}/>
+        <Botones name={9}/>
+        <Botones name={4}/>
+        <Botones name={5}/>
+        <Botones name={6}/>
+        <Botones name={1}/>
+        <Botones name={2}/>
+        <Botones name={3}/>
         <div className="boton-cero">
-        <Botones text="0"/>
+        <Botones name={0}/>
         </div>
-        <Botones text="."/>
+        <Botones name="."/>
         </div>
       
       <div className="contenedor-operadores">
-        <Botones text="/"/>
-        <Botones text="X"/>
-        <Botones text="-"/>
-        <Botones text="+"/>
-        <Botones text="="/>
+        <Botones name="/"/>
+        <Botones name="X"/>
+        <Botones name="-"/>
+        <Botones name="+"/>
+        <Botones name="="/>
       </div>
     </div>
     )
 }
 
 export default Calculadora
+
